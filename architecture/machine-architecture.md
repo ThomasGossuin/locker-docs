@@ -41,21 +41,3 @@ L’application `locker-machine` gère l’interface physique entre l’utilisat
 
 ---
 
-## 🔄 Fonctionnement général
-
-```mermaid
-flowchart TD
-    Start[🔌 Allumage Machine]
-    UI[🖥️ Interface Utilisateur]
-    RFID[🏷️ Lecture badge]
-    Auth[🔐 Authentification]
-    Action[🎛️ Choix action (ouvrir casier, paiement, etc.)]
-    Casier[📦 Contrôle casier]
-    Temp[🌡️ Capteurs température]
-    API[🌐 Appel API centrale]
-    End[✅ Fin transaction]
-
-    Start --> UI --> RFID --> Auth --> Action
-    Action --> Casier --> API --> End
-    Action --> Temp --> API
-```

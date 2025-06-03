@@ -97,7 +97,7 @@
 
 ---
 
-## 🤊 Températures
+## 🧊 Températures
 
 **Endpoints**
 
